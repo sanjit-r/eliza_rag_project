@@ -1,0 +1,18 @@
+sectors:
+  Technology:  [AAPL, MSFT, NVDA, GOOG, META, AMZN, ADBE, CRM, CSCO, IBM, INTC, AMD, ORCL, NFLX]
+  Financial:   [JPM, BAC, GS, MS, BLK, AXP, MA, V, BRK]
+  Healthcare:  [JNJ, PFE, MRK, ABBV, LLY, TMO, UNH]
+  Consumer:    [AAPL, AMZN, WMT, TGT, COST, KO, PEP, MCD, SBUX, NKE, DIS, HD, PG]
+  Energy:      [XOM, CVX]
+  Industrial:  [CAT, DE, BA, LMT, RTX, GE, UPS]
+  Telecom:     [VZ, T, CMCSA]
+
+# Sector keyword triggers (case-insensitive matching in questions)
+sector_keywords:
+  Technology:  [tech, technology, software, semiconductor, cloud, AI, artificial intelligence]
+  Financial:   [financial, finance, bank, banking, investment, insurance, fintech]
+  Healthcare:  [healthcare, health care, pharmaceutical, pharma, drug, biotech, medical, hospital]
+  Consumer:    [consumer, retail, food, beverage, restaurant, apparel, entertainment, media]
+  Energy:      [energy, oil, gas, petroleum, fossil fuel, renewable]
+  Industrial:  [industrial, aerospace, defense, manufacturing, machinery, logistics]
+  Telecom:     [telecom, telecommunications, wireless, broadband, cable]
