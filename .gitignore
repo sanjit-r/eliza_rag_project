@@ -3,7 +3,7 @@
 *.env
 
 # Index files (large binary artifacts — rebuild with indexer.py)
-data/index/
+# data/index/
 
 # Python
 __pycache__/

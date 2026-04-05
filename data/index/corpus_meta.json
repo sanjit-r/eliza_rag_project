@@ -1,0 +1,680 @@
+{
+  "AAPL": {
+    "company": "Apple Inc",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2022-04-29",
+      "2022-07-29",
+      "2022-10-28",
+      "2023-02-03",
+      "2023-05-05",
+      "2023-08-04",
+      "2023-11-03",
+      "2024-02-02",
+      "2024-05-03",
+      "2024-08-02",
+      "2024-11-01",
+      "2025-01-31",
+      "2025-05-02",
+      "2025-08-01",
+      "2025-10-31",
+      "2026-01-30"
+    ],
+    "filing_count": 16,
+    "coverage_score": 20.0
+  },
+  "ABBV": {
+    "company": "AbbVie Inc",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2025-02-14"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "ADBE": {
+    "company": "Adobe Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2026-01-15"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "AMD": {
+    "company": "Advanced Micro Devices Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2026-02-04"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "AMZN": {
+    "company": "Amazon.com Inc",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2022-04-29",
+      "2022-07-29",
+      "2022-10-28",
+      "2023-02-03",
+      "2023-04-28",
+      "2023-08-04",
+      "2023-10-27",
+      "2024-02-02",
+      "2024-05-01",
+      "2024-08-02",
+      "2024-11-01",
+      "2025-02-07",
+      "2025-05-02",
+      "2025-08-01",
+      "2025-10-31",
+      "2026-02-06"
+    ],
+    "filing_count": 16,
+    "coverage_score": 20.0
+  },
+  "AXP": {
+    "company": "American Express Company",
+    "sector": "Financial",
+    "filing_dates": [
+      "2026-02-06"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "BAC": {
+    "company": "Bank of America Corporation",
+    "sector": "Financial",
+    "filing_dates": [
+      "2025-02-25",
+      "2025-04-30",
+      "2025-07-31",
+      "2025-10-31"
+    ],
+    "filing_count": 4,
+    "coverage_score": 6.0
+  },
+  "BA": {
+    "company": "The Boeing Company",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2026-01-30"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "BLK": {
+    "company": "BlackRock Inc",
+    "sector": "Financial",
+    "filing_dates": [
+      "2024-02-23"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "BRK": {
+    "company": "Berkshire Hathaway Inc",
+    "sector": "Financial",
+    "filing_dates": [
+      "2025-02-24"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "CAT": {
+    "company": "Caterpillar Inc",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2026-02-13"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "CMCSA": {
+    "company": "Comcast Corporation",
+    "sector": "Telecom",
+    "filing_dates": [
+      "2026-02-03"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "COST": {
+    "company": "Costco Wholesale Corporation",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-10-08"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "CRM": {
+    "company": "Salesforce Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2025-03-05"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "CSCO": {
+    "company": "Cisco Systems Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2025-09-03"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "CVX": {
+    "company": "Chevron Corporation",
+    "sector": "Energy",
+    "filing_dates": [
+      "2025-02-21"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "DE": {
+    "company": "Deere & Company",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2025-12-18"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "DIS": {
+    "company": "The Walt Disney Company",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2022-02-09",
+      "2022-05-11",
+      "2022-08-10",
+      "2022-11-29",
+      "2023-02-08",
+      "2023-05-10",
+      "2023-08-09",
+      "2023-11-21",
+      "2024-02-07",
+      "2024-05-07",
+      "2024-08-07",
+      "2024-11-14",
+      "2025-02-05",
+      "2025-05-07",
+      "2025-08-06",
+      "2025-11-13",
+      "2026-02-02"
+    ],
+    "filing_count": 17,
+    "coverage_score": 21.0
+  },
+  "GE": {
+    "company": "General Electric Company",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2015-02-27"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.0
+  },
+  "GOOG": {
+    "company": "Alphabet Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2022-10-26",
+      "2023-02-03",
+      "2023-04-26",
+      "2023-07-26",
+      "2023-10-25",
+      "2024-01-31",
+      "2024-04-26",
+      "2024-07-24",
+      "2024-10-30",
+      "2025-02-05",
+      "2025-04-25",
+      "2025-07-24",
+      "2025-10-30",
+      "2026-02-05"
+    ],
+    "filing_count": 14,
+    "coverage_score": 18.0
+  },
+  "GS": {
+    "company": "Goldman Sachs Group Inc",
+    "sector": "Financial",
+    "filing_dates": [
+      "2025-02-27"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "HD": {
+    "company": "The Home Depot Inc",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-03-21"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "IBM": {
+    "company": "International Business Machines Corp",
+    "sector": "Technology",
+    "filing_dates": [
+      "2025-02-25"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "INTC": {
+    "company": "Intel Corporation",
+    "sector": "Technology",
+    "filing_dates": [
+      "2026-01-23"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "JNJ": {
+    "company": "Johnson & Johnson",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2022-02-17",
+      "2022-04-29",
+      "2022-07-29",
+      "2022-10-27",
+      "2023-02-16",
+      "2023-04-28",
+      "2023-07-31",
+      "2023-10-27",
+      "2024-02-16",
+      "2024-05-01",
+      "2024-07-25",
+      "2024-10-23",
+      "2025-02-13",
+      "2025-04-23",
+      "2025-07-24",
+      "2025-10-22",
+      "2026-02-11"
+    ],
+    "filing_count": 17,
+    "coverage_score": 21.0
+  },
+  "JPM": {
+    "company": "JPMorgan Chase & Co",
+    "sector": "Financial",
+    "filing_dates": [
+      "2025-05-01",
+      "2025-08-05",
+      "2025-11-04",
+      "2026-02-13"
+    ],
+    "filing_count": 4,
+    "coverage_score": 6.0
+  },
+  "KO": {
+    "company": "The Coca-Cola Company",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2022-04-28",
+      "2022-07-27",
+      "2022-10-26",
+      "2023-02-21",
+      "2023-04-26",
+      "2023-07-27",
+      "2023-10-24",
+      "2024-02-20",
+      "2024-05-02",
+      "2024-07-29",
+      "2024-10-24",
+      "2025-02-20",
+      "2025-05-01",
+      "2025-07-24",
+      "2025-10-23"
+    ],
+    "filing_count": 15,
+    "coverage_score": 19.0
+  },
+  "LLY": {
+    "company": "Eli Lilly and Company",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2026-02-12"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "LMT": {
+    "company": "Lockheed Martin Corporation",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2026-01-29"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "MA": {
+    "company": "Mastercard Inc",
+    "sector": "Financial",
+    "filing_dates": [
+      "2026-02-11"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "MCD": {
+    "company": "McDonalds Corporation",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2023-05-04",
+      "2025-02-25"
+    ],
+    "filing_count": 2,
+    "coverage_score": 2.5
+  },
+  "META": {
+    "company": "Meta Platforms Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2024-04-25",
+      "2024-08-01",
+      "2024-10-31",
+      "2025-01-30",
+      "2025-05-01",
+      "2025-07-31",
+      "2025-10-30",
+      "2026-01-29"
+    ],
+    "filing_count": 8,
+    "coverage_score": 12.0
+  },
+  "MRK": {
+    "company": "Merck & Co Inc",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2025-02-25"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "MSFT": {
+    "company": "Microsoft Corporation",
+    "sector": "Technology",
+    "filing_dates": [
+      "2022-04-26",
+      "2022-07-28",
+      "2022-10-25",
+      "2023-01-24",
+      "2023-04-25",
+      "2023-07-27",
+      "2023-10-24",
+      "2024-01-30",
+      "2024-04-25",
+      "2024-07-30",
+      "2024-10-30",
+      "2025-01-29",
+      "2025-04-30",
+      "2025-07-30",
+      "2025-10-29",
+      "2026-01-28"
+    ],
+    "filing_count": 16,
+    "coverage_score": 20.0
+  },
+  "MS": {
+    "company": "Morgan Stanley",
+    "sector": "Financial",
+    "filing_dates": [
+      "2026-02-19"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "NFLX": {
+    "company": "Netflix Inc",
+    "sector": "Technology",
+    "filing_dates": [
+      "2026-01-23"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "NKE": {
+    "company": "Nike Inc",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-07-17"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "NVDA": {
+    "company": "NVIDIA Corporation",
+    "sector": "Technology",
+    "filing_dates": [
+      "2022-03-18",
+      "2022-05-27",
+      "2022-08-31",
+      "2022-11-18",
+      "2023-02-24",
+      "2023-05-26",
+      "2023-08-28",
+      "2023-11-21",
+      "2024-02-21",
+      "2024-05-29",
+      "2024-08-28",
+      "2024-11-20",
+      "2025-02-26",
+      "2025-05-28",
+      "2025-08-27",
+      "2025-11-19"
+    ],
+    "filing_count": 16,
+    "coverage_score": 20.0
+  },
+  "ORCL": {
+    "company": "Oracle Corporation",
+    "sector": "Technology",
+    "filing_dates": [
+      "2025-06-18"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "PEP": {
+    "company": "PepsiCo Inc",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2023-04-25",
+      "2026-02-03"
+    ],
+    "filing_count": 2,
+    "coverage_score": 2.5
+  },
+  "PFE": {
+    "company": "Pfizer Inc",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2022-05-11",
+      "2022-08-10",
+      "2022-11-09",
+      "2023-02-23",
+      "2023-05-10",
+      "2023-08-09",
+      "2023-11-08",
+      "2024-02-22",
+      "2024-05-08",
+      "2024-08-05",
+      "2024-11-04",
+      "2025-02-27",
+      "2025-05-05",
+      "2025-08-05",
+      "2025-11-04"
+    ],
+    "filing_count": 15,
+    "coverage_score": 19.0
+  },
+  "PG": {
+    "company": "Procter & Gamble Company",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-08-04"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "RTX": {
+    "company": "RTX Corporation",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2026-02-06"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "SBUX": {
+    "company": "Starbucks Corporation",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-11-14"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "TGT": {
+    "company": "Target Corporation",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-03-12"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "TMO": {
+    "company": "Thermo Fisher Scientific Inc",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2025-02-20"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "TSLA": {
+    "company": "Tesla Inc",
+    "sector": "Unknown",
+    "filing_dates": [
+      "2022-04-25",
+      "2022-07-25",
+      "2022-10-24",
+      "2023-01-31",
+      "2023-04-24",
+      "2023-07-24",
+      "2023-10-23",
+      "2024-01-29",
+      "2024-04-24",
+      "2024-07-24",
+      "2024-10-24",
+      "2025-01-30",
+      "2025-04-23",
+      "2025-07-24",
+      "2025-10-23",
+      "2026-01-29"
+    ],
+    "filing_count": 16,
+    "coverage_score": 20.0
+  },
+  "T": {
+    "company": "AT&T Inc",
+    "sector": "Telecom",
+    "filing_dates": [
+      "2026-02-09"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "UNH": {
+    "company": "UnitedHealth Group Inc",
+    "sector": "Healthcare",
+    "filing_dates": [
+      "2022-05-04",
+      "2022-08-03",
+      "2022-11-02",
+      "2023-02-24",
+      "2023-05-03",
+      "2023-08-02",
+      "2023-11-06",
+      "2024-02-28",
+      "2024-05-09",
+      "2024-08-09",
+      "2024-11-04",
+      "2025-02-27",
+      "2025-05-07",
+      "2025-08-11",
+      "2025-10-28"
+    ],
+    "filing_count": 15,
+    "coverage_score": 19.0
+  },
+  "UPS": {
+    "company": "United Parcel Service Inc",
+    "sector": "Industrial",
+    "filing_dates": [
+      "2026-02-17"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "VZ": {
+    "company": "Verizon Communications Inc",
+    "sector": "Telecom",
+    "filing_dates": [
+      "2026-02-17"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "V": {
+    "company": "Visa Inc",
+    "sector": "Financial",
+    "filing_dates": [
+      "2025-11-06"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "WMT": {
+    "company": "Walmart Inc",
+    "sector": "Consumer",
+    "filing_dates": [
+      "2025-03-14"
+    ],
+    "filing_count": 1,
+    "coverage_score": 1.5
+  },
+  "XOM": {
+    "company": "Exxon Mobil Corporation",
+    "sector": "Energy",
+    "filing_dates": [
+      "2022-05-04",
+      "2022-08-03",
+      "2022-11-02",
+      "2023-02-22",
+      "2023-05-02",
+      "2023-08-01",
+      "2023-10-31",
+      "2024-02-28",
+      "2024-04-29",
+      "2024-08-05",
+      "2024-11-04",
+      "2025-02-19",
+      "2025-05-05",
+      "2025-08-04",
+      "2025-11-03",
+      "2026-02-18"
+    ],
+    "filing_count": 16,
+    "coverage_score": 20.5
+  }
+}
