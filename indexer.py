@@ -6,17 +6,15 @@ Usage:
     python indexer.py --corpus-dir /path/to/edgar_corpus --index-dir data/index
 
 This is a one-time operation. Run it before using query.py.
-Expected time: ~5-15 minutes on CPU for 246 files.
+Expected time: ~30 minutes (rate-limited by OpenAI embedding API).
 
 What this script does:
   1. Parse all .txt filings in the corpus directory into Chunks
-  2. Embed all chunk texts using BAAI/bge-small-en-v1.5
+  2. Embed all chunk texts using Voyage AI voyage-3-lite
   3. Build a FAISS IndexFlatIP (exact cosine similarity)
   4. Save: index.faiss, metadata.pkl, corpus_meta.json
   5. Compute corpus_meta (company coverage scores) for sector expansion
 """
-
-import argparse
 
 try:
     from dotenv import load_dotenv
@@ -24,6 +22,7 @@ try:
 except ImportError:
     pass
 
+import argparse
 import json
 import logging
 import sys
@@ -182,7 +181,7 @@ def main():
         sys.exit(1)
 
     # --- Step 2: Embed all chunks ---
-    logger.info("Embedding %d chunks (this may take 5-15 minutes on CPU) ...", len(all_chunks))
+    logger.info("Embedding %d chunks via Voyage AI API (this may take ~10 minutes) ...", len(all_chunks))
     embedder = Embedder()
     t0 = time.time()
 

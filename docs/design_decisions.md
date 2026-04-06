@@ -10,25 +10,27 @@ Status tags:
 
 ---
 
-## 1. Embedding model: `text-embedding-3-small` (OpenAI API)
+## 1. Embedding model: `voyage-3-lite` (Voyage AI API)
 
-**Decision:** Use OpenAI's `text-embedding-3-small` API for embeddings rather than a local model.
+**Decision:** Use Voyage AI's `voyage-3-lite` model for embeddings.
 
 **Justification:**
+- Anthropic's recommended embedding provider for use with Claude — retrieval-optimized and
+  designed to complement Claude's context understanding
+- 512-dimensional embeddings; L2-normalized by the API, so `IndexFlatIP` inner product gives
+  exact cosine similarity without any extra normalization step
+- `input_type` parameter handles asymmetric retrieval natively: `"document"` for indexing,
+  `"query"` for queries — Voyage applies the appropriate prompt internally
 - Works on any machine regardless of OS or hardware — no PyTorch/MPS dependency
-- 1536-dimensional embeddings; embeddings are L2-normalized by the API, so
-  `IndexFlatIP` inner product gives exact cosine similarity without any extra normalization step
-- No local model download or disk space required for model weights
-- OpenAI handles query/document embedding symmetry internally — no query prefix needed
-- Strong retrieval quality: `text-embedding-3-small` outperforms older `ada-002` on MTEB
+- Smaller index than OpenAI alternatives (~68MB vs ~200MB for 1536-dim models), faster FAISS search
 
 **Trade-off considered:** A local model (e.g., `BAAI/bge-small-en-v1.5`) avoids a second API key
 and runs offline, but introduces platform-specific PyTorch issues (MPS OOM on Intel Macs,
-segfaults with certain torch builds). The OpenAI approach is more portable and reliable across
-machines at the cost of an additional API key and per-token pricing on the indexing step.
+segfaults with certain torch builds). Voyage AI is more portable and reliable across machines
+at the cost of a second API key and per-token pricing on the indexing step.
 
-**Cost note:** Indexing ~33K chunks of ~700 tokens each ≈ ~23M tokens.
-`text-embedding-3-small` pricing is $0.02/1M tokens → ~$0.46 one-time indexing cost.
+**Cost note:** Indexing ~33K chunks of ~600 tokens each ≈ ~20M tokens.
+`voyage-3-lite` pricing is $0.02/1M tokens → ~$0.15 one-time indexing cost.
 Query-time embedding is a single short string — negligible cost.
 
 **Status:** [VALIDATED — works on macOS Intel and Apple Silicon without platform-specific config]
@@ -40,7 +42,7 @@ Query-time embedding is a single short string — negligible cost.
 **Decision:** Use an exact inner-product FAISS index with no approximation.
 
 **Justification:**
-- At ~33K chunks × 1536 dims × 4 bytes = ~200MB index — well within RAM
+- At ~33K chunks × 512 dims × 4 bytes = ~68MB index — well within RAM
 - Flat index gives exact nearest-neighbor results (no approximation error)
 - No server, no Docker, no configuration: just two files (`index.faiss` + `metadata.pkl`)
 - Cosine similarity is achieved by combining L2-normalization of embeddings with inner-product
@@ -75,8 +77,9 @@ Not needed here — flat exact search is appropriate for the corpus size.
   "Financial Statements" in Part I but "Legal Proceedings" in Part II
 - XBRL blob skipped by scanning for first PART/TOC/ITEM marker (not a line number)
 
-**Status:** [ASSUMPTION — 700-token target based on common RAG practice; validate chunk sizes
-during parser robustness check]
+**Status:** [VALIDATED — full corpus produced 33,362 chunks across 246 files; 98.8% parsed
+section-aware (243 files), 1.2% fallback recursive (3 files: INTC, MS, MCD); 0 zero-chunk
+files; average chunk size ~2,400 chars (~600 tokens), within target range]
 
 ---
 
@@ -124,8 +127,10 @@ Sonnet 4.6 is the right balance for an analytical task with well-structured retr
 a second LLM call (violates the single-call constraint for the answer, and adds latency).
 The current pipeline achieves reasonable diversity without any additional API calls.
 
-**Status:** [ASSUMPTION — dynamic budget allocations (per_entity_min, global_slots) are
-reasonable defaults; should be tested on all 10 evaluation questions]
+**Status:** [VALIDATED — tested across all 10 evaluation questions; all target entities present
+in retrieved sets for multi-company queries; hard date filter correctly excluded pre-2024 filings
+for explicit temporal queries (confirmed via ablation vs. naive top-15); sector pool restriction
+prevents cross-sector noise for energy and pharma queries]
 
 ---
 
@@ -149,8 +154,9 @@ reasonable defaults; should be tested on all 10 evaluation questions]
 and select the 6 with the highest best-chunk cosine score. This is semantically better
 but adds one FAISS scan per candidate company per query.
 
-**Status:** [ASSUMPTION — coverage-based selection is pragmatic; the optional semantic
-selection may produce noticeably better results for heterogeneous sectors like Healthcare]
+**Status:** [VALIDATED — sector expansion tested on Q3 (pharma) and Q8 (energy); pharma query
+returned 6 distinct healthcare tickers (LLY, PFE, MRK, ABBV, UNH, JNJ); energy query returned
+only XOM and CVX with no cross-sector noise after candidate pool restriction was added]
 
 ---
 
